@@ -12,3 +12,4 @@
 # Build artifacts (chess, chess-cli) and object files have no whitelisted
 # extension, so the root '*' already ignores them. Runtime save state:
 Save.txt
+.claude
