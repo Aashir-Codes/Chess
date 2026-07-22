@@ -1,0 +1,14 @@
+# The repository-root .gitignore ignores everything ('*') and then whitelists
+# only a few source extensions (*.cpp, *.h, *.png, *.svg, *.txt, *.sh).
+# That silently drops this project's audio, fonts and docs. Re-include them
+# here so a fresh clone actually has the assets the game loads.
+
+!.gitignore
+!*.md
+!*.wav
+!*.ttf
+!*.py
+
+# Build artifacts (chess, chess-cli) and object files have no whitelisted
+# extension, so the root '*' already ignores them. Runtime save state:
+Save.txt
